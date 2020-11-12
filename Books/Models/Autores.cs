@@ -12,7 +12,7 @@ namespace Books.Models
         
         [Required]
         [StringLength(256)]
-        public String Nome { get; set; }
+        public string Nome { get; set; }
 
         public ICollection<Book> Books { get; set; }
     }
