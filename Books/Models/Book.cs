@@ -16,7 +16,7 @@ namespace Books.Models
 
         public string Description { get; set; }
 
-        public int AutorId { get; set; }
-        public Autores autor { get; set; }
+        public int AuthorId { get; set; }
+        public Author author { get; set; }
     }
 }

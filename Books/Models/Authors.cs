@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Books.Models
 {
-    public class Autores
+    public class Author
     {
-        public int AutorId { get; set; }
+        public int AuthorId { get; set; }
         
         [Required]
         [StringLength(256)]
-        public string Nome { get; set; }
+        public string Name { get; set; }
 
         public ICollection<Book> Books { get; set; }
     }
