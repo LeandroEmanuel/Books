@@ -10,8 +10,8 @@ namespace Books.Models
     {
         public int AuthorId { get; set; }
         
-        [Required]
-        [StringLength(256)]
+        [Required(ErrorMessage ="Por favor escreva o nome do autor que pretende inserir!")]
+        [StringLength(256, MinimumLength = 2, ErrorMessage ="O nome deve ter no minimo 2 caracteres e no maximo 256 caracters")]
         public string Name { get; set; }
 
         public ICollection<Book> Books { get; set; }
